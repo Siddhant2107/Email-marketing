@@ -1,5 +1,6 @@
 📧 Email Campaign Optimization
 This project analyzes an email marketing campaign to uncover what drives user engagement and builds a machine learning model to predict click-through probability, guiding future targeting strategies.
+Main file -- first.ipynb
 
 ✅ Project Goals
 
