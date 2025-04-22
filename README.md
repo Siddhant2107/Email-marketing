@@ -2,6 +2,7 @@
 This project analyzes an email marketing campaign to uncover what drives user engagement and builds a machine learning model to predict click-through probability, guiding future targeting strategies.
 
 ✅ Project Goals
+
 ✔️ Analyze open and click-through behavior across email campaigns
 
 ✔️ Understand the impact of email content, personalization, timing, user demographics, and purchase history
@@ -17,6 +18,7 @@ This project analyzes an email marketing campaign to uncover what drives user en
 ✔️ Provide an implementation plan for real-world deployment
 
 ✅ Summary of Key Insights
+
 🕒 Timing Optimization
 ✔️ Best hours to send: 23:00, 00:00, 10:00
 
@@ -25,6 +27,7 @@ This project analyzes an email marketing campaign to uncover what drives user en
 ✔️ Best days: Wednesday, Tuesday
 
 ✉️ Email Content
+
 ✔️ Short emails outperform long ones
 
 ✔️ Personalized emails drive significantly higher CTR
@@ -32,14 +35,17 @@ This project analyzes an email marketing campaign to uncover what drives user en
 ✔️ Personalization works especially well for high-value customers
 
 🌍 Geographic Performance
+
 ✔️ Top performing countries (by CTR): UK > US > ES > FR
 
 🛍️ User Segmentation (Purchase History)
+
 ✔️ Customers with 6+ purchases had highest engagement
 
 ✔️ CTR improves consistently with more past purchases
 
 ✅ Modeling Results
+
 ✔️ Used SMOTE to balance classes due to low click-through rate (~2.1%)
 
 ✔️ Evaluated multiple models using ROC AUC, PR AUC, and F1-score
@@ -49,11 +55,13 @@ This project analyzes an email marketing campaign to uncover what drives user en
 ✔️ Applied optimal probability threshold using Precision-Recall curve
 
 ✅ Performance Improvement Estimate
+
 ✔️ By targeting the top 50% of users based on model score, we can achieve a ~65.1% increase in click-through rate
 
 ✔️ Model-based targeting boosts CTR from 2.1% → ~3.48%
 
 ✅ How to Test This in Production
+
 ✔️ Phase 1: Score users using the model
 
 ✔️ Phase 2: Send emails only to top 50% of predicted high-CTR users
@@ -65,11 +73,13 @@ This project analyzes an email marketing campaign to uncover what drives user en
 ✔️ Phase 5: Iterate with new campaign data
 
 ✅ Answers to Key Business Questions
+
 💬 "The VP of marketing thinks it's stupid to send emails randomly. Can you build a model to optimize this?"
 ✔️ Yes! We've built a model that predicts the probability of a user clicking an email based on historical behavior, demographics, email content, and timing.
 ✔️ It allows intelligent targeting instead of random sends — maximizing ROI and user engagement.
 
 💡 "By how much could this model improve CTR? How would you test it?"
+
 ✔️ Our model identifies the top 50% of users with highest predicted CTR.
 ✔️ When targeting these users, we estimate a 65.1% increase in CTR.
 ✔️ We'd test this through an A/B test comparing:
@@ -93,6 +103,7 @@ Group B: Emails sent at random
 📄 Keep emails short and to the point
 
 ✅ Final Recommendations
+
 ✔️ Use the model to score and target the top 50% of your audience
 
 ✔️ Focus on personalized, short emails for maximum engagement
